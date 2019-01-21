@@ -31,6 +31,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="InterSystems.Data.CacheClient">
+      <HintPath>..\..\..\Horus (2019)\A03 - Persistencia\Libraries\InterSystems.Data.CacheClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\Horus (2019)\A03 - Persistencia\Libraries\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Horus (2019)\A03 - Persistencia\Libraries\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\Horus (2019)\A03 - Persistencia\Libraries\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,7 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PConnectionClass.cs" />
+    <Compile Include="PNotaFiscalDevolucao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\002 - Entidade\002 - Entidade.csproj">
+      <Project>{213c3807-a10c-415d-8a1c-6fe120e7c2e3}</Project>
+      <Name>002 - Entidade</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

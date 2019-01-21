@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NNotaFiscalDevolucao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\002 - Entidade\002 - Entidade.csproj">
+      <Project>{213c3807-a10c-415d-8a1c-6fe120e7c2e3}</Project>
+      <Name>002 - Entidade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\004 - Persistencia\004 - Persistencia.csproj">
+      <Project>{5169ba7c-5699-48ff-b60b-978d864d4e9c}</Project>
+      <Name>004 - Persistencia</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
